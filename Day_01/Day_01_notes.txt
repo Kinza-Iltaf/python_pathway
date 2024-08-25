@@ -1,0 +1,112 @@
+                                                                                       question 01:
+
+what is python?
+answer:
+python is dynamic typed, hign level programing language that is used for web development, data science, automation, and more due to its extensive standard library and active community.
+It is developed by "Guido van rosum"
+It is also portable. Means its code can be run in any system without modification like in unix, windows or in mac.
+
+                                                                                        question 02:
+
+how to print something on screen?
+
+to print something on screen for this we use "print" function
+syntax:
+print("hello")
+
+                                                                                       question 03:
+ what characters python accept?(character set of python)
+1. All alphabets (A - Z and a  - z)
+2. Numeric number (0-9)
+3. Special characters
+4. Other Character (ASCII and UNICODE )
+
+question 04:
+what is variable?
+A variable is the name that is given to the memory location where we store our data and then access it with the help me that location name. The value store in the variable vary from time to time. Thats why it is called variable.
+
+                                                                                          question 05: 
+How we declare the variable?
+Unlike other programing languages we don't need to declare the variable with its datatype like
+int age= 2;
+float price= 4.5$;
+string name = "kinza";
+
+In python we just write variable name and initialize it with value like:
+age = 5;
+price= 4.6$;
+
+                                                                                           question 05:
+what are the rules for naming a variable?
+
+01. The variable name can not be reserved word (words that have special meaning in python. For example print is function name that is used to print something on screen so it can not be variable name)
+02. The numeric value can not be used in the beginning of variable name.(1var = 10 is invalid and var1 =10 is valid)
+03. The name can not consist of special character. ( var% =9 is invalid)
+
+Datatype in python:
+01. int
+02. float
+03. str 
+04. boolean
+
+                                                                                            question 06:
+ what is comment in python?
+Comments for lines that are ignored by compiler and does not execute. Comments are used to add extra information with code that help the programmer to understand the code. For example:
+ 
+print("hello") // this line will print the hello on screen.
+ 
+question 07:
+how to add comments in code?
+
+to comment out single line in code we use  # symbol in the beginning of line (shortcut ctrl+/)
+to comment out multiple lines in code we use triple quotes (""" line to comment out """)
+
+                                                                                        question 07:
+what are operators in python?
+there are four type of operator in python.
+1. arthematic operator (+, - , *( multiplication) , / (division) )
+2. assignment operator 
+3. relational or comarison operator ( = , >,< ,! )
+4. Logical operator ( not, or , and) return true or false value.
+
+                                                                                        question 08:
+what is type conversion?
+type conversion is the process of conversion one datatype of variable into another. for example conversion of int (integer) into float and wise versa
+ 
+It is done into two ways :
+1. implicity: done by programmer.this is also called type casting.
+for example:
+
+# Implicit Conversion
+result = 3 + 2.5  # Python automatically converts 3 to 3.0 (float)
+
+2. explicitly: done by the compiler automatically
+for example:
+
+# Explicit Conversion
+num_str = "10"
+num_int = int(num_str)  # Converts string to integer
+
+                                                                                              question 09:
+how we can take input from users in python?
+to take input from user we use keyword(reserved word) input() and write anything inside the paranthesis.
+
+for example:
+input("enter a number", )
+
+After this line the comiler will wait untill the user enter any value.
+
+input function always take data in string datatype so if we are taking data into another type we have to first done the type casting
+int(input("enter value", )
+it is the best way
+
+practice questions are given in ather files
+best of luck
+
+
+
+
+
+
+
+
