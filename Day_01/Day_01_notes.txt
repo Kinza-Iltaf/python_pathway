@@ -100,7 +100,7 @@ input function always take data in string datatype so if we are taking data into
 int(input("enter value", )
 it is the best way
 
-practice questions are given in ather files
+practice questions are given in other files
 best of luck
 
 
