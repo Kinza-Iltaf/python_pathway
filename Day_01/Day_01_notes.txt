@@ -97,10 +97,10 @@ input("enter a number", )
 After this line the comiler will wait untill the user enter any value.
 
 input function always take data in string datatype so if we are taking data into another type we have to first done the type casting
-int(input("enter value", )
+int(input("enter value", ))
 it is the best way
 
-practice questions are given in ather files
+practice questions are given in other files
 best of luck
 
 
