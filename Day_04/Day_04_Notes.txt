@@ -1,0 +1,26 @@
+                ****Dictionary And Sets In Python *****
+The Dictionary is builint_ data type in python which store the data which having different datatype (string, list , tupple, int , boolean, float) in form of Key:value. (key is word and value is the the data.)
+
+properties of Dictionary:
+1. mutable (changeable)
+
+2. unordered (no rule which thing will come first like string will be declare first or int no such things)
+
+3. Unique (Two keys can not have same names like, we can not create to keys having same name "age")
+it is mutable , unordered and unique(no duplication)
+
+Syntax:
+
+dic_name = {
+    key:value
+}
+
+student= {
+    "name" :john, : string
+    "class" :      5  , :int
+    "grade" :"A" , : string
+    "Percentage" : 80.90,: flaot
+}
+
+
+Note: the keys should be constant that should not change in future like list, we can add and remove element from list so we can not make the list as key.
