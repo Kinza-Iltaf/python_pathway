@@ -99,6 +99,93 @@ print("New Movies List After Insersion of new Movies:\n", favorite_Movies)
 favorite_Movies.pop(-1)
 print("Updated List after deletion of last movie Name:\n", favorite_Movies)
 
+# Task:06
+# Create a list of numbers from 1 to 10. Remove the first even number from the list using the list.remove() method. Print the modified list.
+
+List = [1,2,3,4,5,6,7,8,9,10]
+
+print("Complete List:", List)
+List.remove(2)
+
+print("List after removing First even number:", List)
+
+# Task: 07
+# Write a Python function that takes a list and a value as input and returns the index of the value using the list.index() method. If the value is not found, handle the exception and return a message saying "Value not found in the list.
+List = [3,5, 75, 53,36,63]
+print("List Elemnets are:", List)
+
+value = int(input("Enter Value to Find:"))
+
+if value in List:
+    index = List.index(value)
+    print("Value exist at index:", index)
+else:
+    print("Entered Value does not exist in the List:")
+
+#     Task: 08
+# Create a tuple with five different animals. Print the tuple. Attempt to change the third animal and explain in a comment why the error occurs.
+
+tup = ("dog", "snake", "cat", "cow", "frog")
+
+print("Tupple that contain the animal names:", tup)
+
+# tup[2] = "Fish" not possible becuase the tupples are unmutable
+
+# Task: 09
+# Given the tuple colors = ('red', 'blue', 'green', 'yellow', 'orange', 'purple', 'brown'), use slicing to:
+
+# Extract the first three colors.
+
+color = ('red', 'blue', 'green', 'yellow', 'orange', 'purple', 'brown')
+part1 = color[:3]
+print("Whole tupple Elements:", color)
+print("First Three colors of tupple:", part1)
+# Extract the last two colors.
+part2 = color[-2:]
+print("Last two colors in tupple:", part2)
+# Reverse the tuple using slicing.
+part3 = color[::-1]
+print("Reversing the tupple:", part3)
+
+
+# Task: 10
+# write a program to check that enter the list is palindrome or not
+list1 = []
+list1.append(int(input("Enter the first Element of the list:")))
+list1.append(int(input("Enter the second Element of the list:")))
+list1.append(int(input("Enter the third Element of the list:")))
+
+print(list1)
+
+copy_list = list1.copy()
+copy_list.reverse()
+
+if(list1 == copy_list):
+    print("List is palindrome:")
+else:
+    print("list is not palindrom:")
+
+#     Task: 11
+# write a program that count the students in tupple with grade A
+
+grade = ("C", "D", "A", "A", "B", "B", "A")
+
+Count = grade.count("A")
+print("Student with grade A in tupple:",Count)
+
+# store these value in list and sort them ("C", "D", "A", "A", "B", "B", "A"):
+
+List = ["C", "D", "A", "A", "B", "B", "A"]
+
+print("List Elements are:", List)
+
+List.sort()
+
+print("List sorting in Acsending order:",List)
+
+List.sort(reverse=True)
+print("List sorting in Decending Order:",List)
+
 
 
 
