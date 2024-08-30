@@ -4,7 +4,7 @@ The Dictionary is builint_ data type in python which store the data which having
 properties of Dictionary:
 1. mutable (changeable)
 
-2. unordered (no rule which thing will come first like string will be declare first or int no such things)
+2. unordered (no rule which thing will come first like string , list and tupple have index so we know that index 1 value come first then index 2 so there is no such things here in dic will be declare first or int no such things)
 
 3. Unique (Two keys can not have same names like, we can not create to keys having same name "age")
 it is mutable , unordered and unique(no duplication)
@@ -24,3 +24,62 @@ student= {
 
 
 Note: the keys should be constant that should not change in future like list, we can add and remove element from list so we can not make the list as key.
+
+Accessing value in distionary:
+we can access any value in dictionary through the key:
+Syntax:
+dic_name [key_name]
+student[name] if we write it with print function then we will get the student name:
+
+Changing the Values of key:
+we can change any value in distionary.
+Syntax:
+dic_name[key] = "value"
+student[name] = "Edison" : jon will be change to Edison
+
+Nested distionary:
+creating a distionary inside a dictionary.
+for example we have a info of a student and we wanto to add his subjects and marks so for this we need another distionary.
+Syntax:
+dic_name = {
+    dic_name = {
+
+    }
+}
+
+Null Distionary:
+we can create a null dictionary and update it time by time as needed.
+
+Syntax:
+n_dic = {
+
+}
+Updation:
+n_dic["Name"] = "John"
+
+Accessing nested dictionary element:
+Syntax:
+main_dic_name[inner_dic_name][key_name]
+
+We can also create a Null dictionary by not assigning it any value:
+
+Syntax:
+dic_name = {
+    
+}
+
+Funtions in Dictionary:
+dic_name.keys()
+this function return all the keys in dictionary.(only keys not values and in case of nested dictionary it only return the outer disctionary name as key.)
+
+Note: we can convert the output of key in list too.
+Syntax:
+print(list(dic_name.keys))
+
+Finding Lengths or total keys in Dictionary:
+print(len(dic_name))
+
+
+
+
+
