@@ -81,5 +81,34 @@ print("Marks of History:",student_info["Subjects"]["History"])
 # Print the updated student_info dictionary.
 print("Updated Student Info:", student_info)
 
+# find the total keys in student_info dictionary
+Total_keys = len(student_info)
+print("The total Keys are:", Total_keys)
+
+# Return the all keys of Student_info in form of list through typecasting and print the type as well
+print("Typecasting of Keys into List:", list(student_info.keys()))
+print("The Type of Student info is:", type(student_info))
+
+# Return All the vlaues of keys in student_info
+
+print("The Values of Keys Are:", student_info.values())
+
+# Return All the values in form of key:value 
+
+print("Keys and Values in form of Tupples:", student_info.items())
+
+print(student_info.get("Name"))  #accessing value through get() function
+
+print(student_info["Name"])  #by simple method
+
+# Add city value "city": "maly" through update method
+
+student_info.update({"City":"Maly"})
+print("After Updation if Student info:", student_info)
+
+
+
+
+
 
 

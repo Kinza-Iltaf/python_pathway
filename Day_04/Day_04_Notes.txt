@@ -69,7 +69,7 @@ dic_name = {
 }
 
 Funtions in Dictionary:
-dic_name.keys()
+1. dic_name.keys()
 this function return all the keys in dictionary.(only keys not values and in case of nested dictionary it only return the outer disctionary name as key.)
 
 Note: we can convert the output of key in list too.
@@ -78,6 +78,80 @@ print(list(dic_name.keys))
 
 Finding Lengths or total keys in Dictionary:
 print(len(dic_name))
+
+2. dic_name.values()
+It return the Values of keys in dictionary
+Syntax:
+dic_name.values()
+
+3. dic_name.items()
+
+It returns all the key:value pair in form of tupples
+Syntax:
+dic_name.items()
+
+4. dic_name.get(key_name)
+It return specific value of key that is given in input inside the paranthesis
+
+Note: another way for getting specific key is: din_name[key].
+
+5. dic_name.update()
+Through this method we can update our dictionary and add key:value pair in our dictionary.
+Method: 01
+new_dic = {"name":"Neha", "age":39,}
+dic_name.update(new_dic)
+
+Method: 02
+dic_name.update("name": Neha chopra") : it will update the existing value
+
+
+                  ******Set in Python*******
+Sets are the unique collection of Element.
+Every element should be unique and immutable.
+Elements are unordered.
+If we try to store the duplicate value it will not generate any error only will ignore that value.
+
+Syntax:
+
+set_name = {element1 , element2 , element3}
+
+Empty Set:
+We can create an empty set as well but it syntax is little bit different.
+
+Syntax:
+set_name ={} : it  is considered as dictionary for set: set_name = set()
+
+Important functions in set:
+
+1. set_name.add()
+It add element to set.
+
+2. set_name.remove()
+it remove the element from set.
+
+3. set_name.clear()
+it empatize the set.
+
+4. set_name.pop()
+it show random vlaue on screen.
+
+5. set_name.union()
+combine the two sets and list down all the values in both sets and ignore the repeation means if 2 is in set1 and also in set2 then in union of set 2 is be written once.
+syntax:
+set1.union(set2)
+
+
+6. set_name.intersection()
+It list down all the values that exist in both sets (common values)
+
+
+
+
+
+
+
+
+
 
 
 
