@@ -106,6 +106,124 @@ print(student_info["Name"])  #by simple method
 student_info.update({"City":"Maly"})
 print("After Updation if Student info:", student_info)
 
+# Task : 05
+# store the following words into pythone dictionary:
+#  "cat" : "small animal" , "table" : "a piece of furniture" , "list of facts and figure"
+
+words_meaning = {
+    "cat" : "small animal" , 
+    "table" : ["a piece of furniture" , "list of facts and figure"]
+
+}
+print("Here are the meaning of some words:", words_meaning)
+
+# Task : 06
+# You are given a list of subjects for students. Assume one classroom is required for 1
+# subject. How many classrooms are needed by all students.
+# ”python” ,“java” ,“C++” ,“python” ,“javascript” ,“java” ,“python” ,“java” ,“C++” ,“C”
+
+# Note: Here are every subject there required one class. like for python we need one class so all for samae subject student.
+# like for python we need one class 
+#  for java we need one class
+# so here the things repeating  like in list we have three python students but for all of them we need one classroom.
+# for solving this question the best approch is set where duplicated values get ignored.
+
+subjects ={"python" , "java", "c++" , "python", "js" , "java" , "python" , "java" , "c++" , " c" }
+print("Class room:", subjects)
+
+print("Total number of class rooms:", len(subjects))
+
+# Task: 07
+# WAP to enter marks of 3 subjects from the user and store them in a dictionary. Start with an empty dictionary & add one by one. Use subject name as key & marks as value.
+
+Marks_of_sujects = {}
+
+print("Initail Dictionary for Student marks that is empty:", Marks_of_sujects)
+p_marks = int(input("Enter marks for physics:"))
+
+p_marks = int(input("Enter marks for physics:"))
+
+p_marks = int(input("Enter marks for physics:"))
+
+Marks_of_sujects.update({"Physics": p_marks})
+Marks_of_sujects.update({"chemistry": p_marks})
+Marks_of_sujects.update({"Math": p_marks})
+
+
+print("marks of Student in Subjects:", Marks_of_sujects)
+
+# Task: 08
+# Create a dictionary to store information about a student, including their name, age, grade, and a list of subjects they are studying. Add another key for their percentage and update it later.
+
+student_info = {
+    "Name" : "john",
+    "Age"  : 23 ,
+    "Grade": "A+",
+    "Subjects": ["physics" , "chemistry", "math" , "Bio" ,]
+}
+
+print("Student Info:", student_info)
+
+student_info["percentage"] = 89
+
+print("Student info After Adding Percentage key to the dictionary:", student_info)
+
+# Print the student's name, age, and subjects. Update the student's grade and percentage and then print the updated dictionary.
+
+student_info.update({"Grade":"B"})
+student_info.update({"percentage":78})
+
+print("Student info after updating the grade and percentage:" , student_info)
+
+# Task: 09
+# Create a dictionary to store employee records where each key is the employee's ID and the value is another dictionary containing the employee's name, department, and salary.
+
+employee_info = {
+
+    "id_01" : {
+        "emp_name": "wana",
+        "dep":"machanical",
+        "salary" : 8000000,
+
+    },
+
+     "id_02" :{
+        "emp_name": "john",
+        "dep":"bio",
+        "salary" : 200000,
+
+    },
+
+     "id_03" :{
+        "emp_name": "Sara",
+        "dep":"IT",
+        "salary" : 800000,
+
+    },
+
+     "id_04" :{
+        "emp_name": "bruce",
+        "dep":"HR",
+        "salary" : 560000,
+
+    }
+
+}
+# Add a new employee to the dictionary.
+
+employee_info["id_05"] = {"emp_name":"Neha", "dep" : "management" , "salary": 67900}
+
+print("Employee Info after adding new employee:", employee_info)
+# Update the salary of an existing employee.
+# Print the details of an employee by accessing their ID.
+# Print all employee IDs.
+
+
+
+
+
+
+
 
 
 
