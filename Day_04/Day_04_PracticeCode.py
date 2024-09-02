@@ -369,9 +369,73 @@ print("Final set of visited cities:", visited_cities)
 # Task : 02
 # 2. Common Friends:
 # Create two sets representing friends you have from two different schools.
+
+group1 = {"john", "Alice"}
+group2 = {"Bob", "Sarah", "john"}
 # Find and print the common friends between the two sets.
+print("Common Friend Between The groups:", group1.intersection(group2))
 # Find the union of both sets to get a list of all friends.
+print("All friend:", group1.union(group2))
 # Remove a friend from one of the sets and print the updated set.
+group2.remove("john")
+print("Group 2 frinds after Removal of John:", group2)
+
+# Task : 03
+# 3. Set Operations:
+
+# Create two sets: one containing numbers from 1 to 5 and another containing numbers from 4 to 8.
+set1 = {1,2,3,4,5}
+set2 = {4,5,6,7,8}
+# Perform the union operation on these sets and print the result.
+print("Union of set1 and set2:", set1.union(set2))
+# Perform the intersection operation and print the result.
+print("Intersection of set2 and set2 is: ", set1.intersection(set2))
+# Use the difference() method to find elements present in the first set but not in the second, and vice versa.
+print("Difference of (set1/set2):", set1.difference(set2))
+
+print("Difference of (set2/set1):", set2.difference(set1))
+
+
+# Task : 04
+# Unique Words in a Sentence:
+
+# Take a sentence as input and convert it into a set of words.
+sentence = str(input("Enter a sentence:" ))
+
+# Print the unique words in the sentence by using a set.
+set1 = set(sentence.split())
+print(set1)
+# Add a new word to the set and print the updated set.
+
+set1.add("great")
+print("updated list:", set1)
+# Check if a particular word is present in the set.
+
+print("Checking for word 'great' :", "great" in set1)
+
+
+# Task : 05
+# 5. Managing a Classroom:
+
+# Create a set containing the names of students in a classroom.
+std_names = {"john" , "Alice" , "Bob", "Michel"}
+print("Student of class: ", std_names)
+# Add a new student to the set.
+
+std_names.add("Lee")
+print("Students names after addition of new student:" , std_names)
+# Remove a student who has left the classroom.
+
+std_names.remove("john")
+print("Students name after leaving john:", std_names)
+# Print the total number of students currently in the classroom.
+
+total_std = len(std_names)
+print("Total students in class:", total_std)
+# Check if a particular student is in the classroom.
+
+print("Is Alice exist in classroom:", "Alice" in std_names)
+
 
 
 
