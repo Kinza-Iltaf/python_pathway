@@ -104,6 +104,9 @@ dic_name.update(new_dic)
 Method: 02
 dic_name.update("name": Neha chopra") : it will update the existing value
 
+6. dic_name.pop("item_name")
+it remove the item that in provided into paranthesis
+
 
                   ******Set in Python*******
 

@@ -215,8 +215,164 @@ employee_info["id_05"] = {"emp_name":"Neha", "dep" : "management" , "salary": 67
 
 print("Employee Info after adding new employee:", employee_info)
 # Update the salary of an existing employee.
+
+employee_info["id_01"].update({"salary":3})
+employee_info["id_02"].update({"salary":5})
+employee_info["id_03"].update({"salary":7})
+employee_info["id_04"].update({"salary":9})
+employee_info["id_05"].update({"salary":11})
+print("Employee info After salary Updation:" , employee_info)
 # Print the details of an employee by accessing their ID.
+
+print("Employee ID_01 Info:", employee_info["id_01"])
 # Print all employee IDs.
+print("ID's of all employees:", employee_info.keys())
+
+
+# Task: 10
+# 3. Nested Dictionary for Courses:
+
+# Create a nested dictionary where the outer dictionary contains course names as keys, and the values are dictionaries containing the number of students enrolled and the course duration in weeks.
+
+# courses: python , java , c++
+
+course_Details = {
+
+    "python" :{
+        "Total_student" : 46 ,
+        "Course_duration" : " 13 weeks",
+    },
+
+      "java" :{
+        "Total_student" : 82 ,
+        "Course_duration" : " 20 weeks",
+    },
+
+      "c++" :{
+        "Total_student" : 29 ,
+        "Course_duration" : " 15 weeks",
+    },
+
+}
+
+print("Course Details are:", course_Details)
+
+# Add a new course to the dictionary.
+
+course_Details["web dev"]= {"Total_student":59 , "Course_duration" : " 3 weeks",}
+
+print("After adding new course:", course_Details)
+# Access and print the duration of a specific course.
+
+print("Duration of c++ course:", course_Details["c++"][ "Course_duration"])
+# Update the number of students enrolled in a course.
+
+course_Details["c++"].update({ "Total_student" : 23 })
+course_Details["java"].update({ "Total_student" : 33 })
+course_Details["python"].update({ "Total_student" : 53 })
+course_Details["web dev"].update({ "Total_student" : 63 })
+
+print("After updation of Enrolled Student:", course_Details)
+
+# Task: 11
+# 4. Inventory Management:
+
+# Create a dictionary to manage inventory in a store where keys are item names and values are the quantity of those items.
+
+invertory_system = {
+    "Apples":34,
+    "Bananas":65,
+    "Graps":25,
+    "peers":37,
+    "Strabery":54,
+}
+print("Items in inventory system:", invertory_system)
+
+# Add items to the inventory. 
+
+invertory_system["Oranges"] = 43
+
+print("After adding new item:", invertory_system)
+# Update the quantity of an existing item.
+
+invertory_system.update({"Apples":30})
+
+print("After updatig the Quantity of Apples:", invertory_system)
+# Remove an item from the inventory.
+
+invertory_system.pop("Apples")
+print("After removing the Apples item:", invertory_system)
+# Print the total number of items in the inventory.
+
+print("Total numbers of Items:", len(invertory_system.keys()))
+
+# Task : 12
+# 5. Phone Book:
+# Create a dictionary to simulate a phone book where keys are contact names and values are their phone numbers.
+
+phone_book = {
+    "johm" : 9136897,
+    "Michel" : 3435235,
+    "sara": 45366343,
+    "farah": 89438938,
+}
+
+print("Phone Book Details:", phone_book)
+# Add a few contacts to the phone book.
+phone_book["Adam"] = 4349347
+phone_book["Maly"] = 45673
+phone_book["Bruce"] = 435639
+
+print("AFter Adding some contacts:", phone_book)
+# Print a contact’s phone number using their name.
+print("Contact Number Of Adam:", phone_book["Adam"])
+# Update a contact's phone number.
+print("Sara's numberr befone updation:", phone_book["sara"])
+
+phone_book.update({"sara":434232})
+
+print("Sara's numbers after updation:", phone_book["sara"])
+# Print all contacts and their phone numbers.
+
+print("Contacts with phone number:" , phone_book.items())
+
+
+        # ******  Practice Questions and Solutions: Sets ******
+
+
+
+# Task : 01
+# 1. Unique Cities:
+
+# Create a set of cities visited by you in the past year.
+
+visited_cities = {"New York", "Los Angeles", "Chicago"}
+
+print("Cities we visited last times:", visited_cities)
+print("Type of visited_cities: ", type(visited_cities))
+# Add a few more cities to the set.
+visited_cities.add("kolampur")
+print("After adding new city:", visited_cities)
+
+# Attempt to add a duplicate city and observe what happens.
+visited_cities.add("kolampur") # this name would get ignored in output bcz it is duplicated.
+print("After adding duplicated city name:", visited_cities)
+# Remove a city from the set.
+
+visited_cities.remove("New York")
+
+print("After removing the New York:", visited_cities)
+# Print the final set of cities.
+
+print("Final set of visited cities:", visited_cities)
+
+# Task : 02
+# 2. Common Friends:
+# Create two sets representing friends you have from two different schools.
+# Find and print the common friends between the two sets.
+# Find the union of both sets to get a list of all friends.
+# Remove a friend from one of the sets and print the updated set.
+
 
 
 
