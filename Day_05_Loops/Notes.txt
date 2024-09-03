@@ -1,0 +1,39 @@
+               ***** Loops *****
+ Question: 01
+ what is loop?              
+loops are used to repeatedly print the instruction of screen based on some codition.
+
+Qestion:02 
+List down the type of loop?
+
+1. while loop
+
+it run the block of instruction until the given condition become false.
+
+syntax:
+
+while condition:
+
+block of statement
+increment or decrement
+
+question: 03
+what is break and continue key words?
+break: it end the loop if certain condition met without completing the iteration.
+
+continue: it has also similar functionalities of break but it is just used to terminate single iteration then continue the execution.
+
+for example:
+we want to print numbers from 0 to 3
+
+i = 0
+while(i<=5):
+if(i==2):
+i+=1
+continue
+print(i)
+i+=1
+
+Note: when the i value equals to 2 the print and i+=1 statement will get ignored and control will shift to the start of while loop
+This key word is used to skip something
+

@@ -30,7 +30,58 @@ while count <= 10 :
        count+=1
 
 # Task : 05
+# print the given list: 
+# [1,,4,9,16,25,36,49,64,81,100] : as every number is the square is next number like 1, 2,3,4,5,6,7,8,9,100
+# method : 01
+# using square method
 
+num = 1
+list = []
+while num<=10:
+       result = num*num
+       list.append(result)
+       print(num*num)
+       num+=1
+print("The list is:", list)
+
+# method : 2
+# using the difference method
+
+num = 1
+difference = 3
+result = 1
+
+list = [result]
+
+while num<10:
+      result = result + difference
+      list.append(result)
+      num+=1
+      difference+=2
+print(" Here is the list:", list)
+
+# Task : 06
+# Search for a specific number
+num = int(input("Enter number:"))
+
+num_list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]  # Use a list instead of a tuple
+i = 0
+
+while i <= len(num_list):
+    if num == num_list[i]:
+        print(num, "Exist at index", i)
+        break
+ 
+    i += 1
+else:
+    print("not exist")             
+       
+print("loop end")  
+
+
+
+
+       
        
 
 
