@@ -140,11 +140,32 @@ for i in range(100 , 0 , -1):
      print(i)
 
 
+# Task : 11
+# print multiplication number of number n
+num = int(input("Enter a number:"))
 
+for val in range(1 , 11 ):
+    print( val , "*" , num , "=", val*num)
 
+# Task : 12
+# print the sum of number till nth natural number.
 
+# Through while loop
+num = int(input("Enter the last number:"))
 
-       
+init = 0
+sum = 0
 
+while init <=num:
+    sum +=init
+    init+=1
+print("sum of natural number till ",num, "is:", sum)
 
+# Through for loop
+num = int(input("Enter the last number:"))
+sum = 0   
+for val in range(0 , num+1):
+    sum += val  
+
+print("sum of natural number till ",num, "is:", sum)
 

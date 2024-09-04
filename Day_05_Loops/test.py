@@ -1,5 +1,6 @@
-# print multiplication number of number n
-num = int(input("Enter a number:"))
+num = int(input("Enter the last number:"))
+sum = 0   
+for val in range(0 , num+1):
+    sum += val  
 
-for val in range( num , 20 , num):
-    print(val)
+print("sum of natural number till ",num, "is:", sum)
