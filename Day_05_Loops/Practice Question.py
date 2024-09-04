@@ -172,9 +172,20 @@ print("sum of natural number till ",num, "is:", sum)
 
 # Task : 13
 # Take a number from user as input and find its factorial
+# through while loop
 num = int(input("Enter the last number:"))
 fac = 1   
 for val in range(1 , num+1):
     fac *= val  
+
+print("factorial of  number ",num, "is:", fac)
+
+# Through for loop:
+num = int(input("Enter the last number:"))
+fac = 1   
+init = 1
+while init <= num:
+    fac *= init
+    init+=1 
 
 print("factorial of  number ",num, "is:", fac)
