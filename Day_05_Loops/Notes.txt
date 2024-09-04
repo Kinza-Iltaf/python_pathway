@@ -37,3 +37,26 @@ i+=1
 Note: when the i value equals to 2 the print and i+=1 statement will get ignored and control will shift to the start of while loop
 This key word is used to skip something
 
+question: 04
+what is for loop in python?
+it work in sequential order like iterate through whole things. 
+A for loop in Python is a way to repeat a block of code multiple times, each time with a different item from a list or sequence.
+
+How It Works:
+Imagine you have a list of items, like ["apple", "banana", "cherry"].
+A for loop lets you go through each item in the list, one by one, and do something with it.
+
+
+Important:
+we use for loop when we know about the number of outputs or last limit like for example we want to print our name 10 times on screen so in this case we would use for loop becasue we know that how many times the loop will run but if we dont have this information then we use while loop that only work on condition and the user don't know about how many times the block of code will execute.
+
+syntax:
+
+for val in list_name
+ print(val)
+
+ here: val can be any variable that represent the individual values in list.
+ in: here in is key word.
+ list name: can be a list dictionary or tuple through which we want to iterate.
+
+ 

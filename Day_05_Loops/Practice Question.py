@@ -79,9 +79,71 @@ else:
 print("loop end")  
 
 
+# Task : 07
+#print the followig list using for loop... num_list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+num_list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+for val in num_list:
+      print(val)
 
 
-       
+# Task: 08
+# search specific number in the list
+num_list = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+for val in num_list:
+      
+      print(val)
+
+search = int (input("Enter for number you want to search:"))
+fount = False
+index = 0
+for val in num_list:
+      if search == val:
+            found = True
+            if found == True:
+             print("number found at index:", index)
+      index+=1      
+else:
+    print("End")
+
+
+# Range(): this function is used to print the specific range started from zero and end before that specific number which we provided as input:
+
+# Task: 09
+# print even number with the help of range() function and store the values in list:
+
+seq = range(0,101,2)  #...0 start, 101 ending point(101 will not include and loop will end one number before it like at 100),  2 step size (everytime the two will be incremented like 0 then 2 increment next 4 and so on)
+list = []
+print("list of Even number to 100 is:")
+for val in seq:
+    list.append(val) 
+print(list)
+
+# Task : 10
+# print numbers from 1 to 100 with range() and for loop:
+# Through for loop:
+seq = range(0,101,2)  #...0 start, 101 ending point(101 will not include and loop will end one number before it like at 100),  2 step size (everytime the two will be incremented like 0 then 2 increment next 4 and so on)
+list = []
+print("list of Even number to 100 is:")
+for val in seq:
+    list.append(val) 
+print(list)
+list.reverse()
+print(list)
+
+#Method 2
+
+print("Numbers from 100 to 1:")
+for i in range(100 , 0 , -1):
+     print(i)
+
+
+
+
+
+
        
 
 
