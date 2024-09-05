@@ -30,3 +30,10 @@ print(result)
 Now if we want to again plus two numbers we don't need to write the code again. we will just call the above function:
 
 sum_fun(4 , 8) : 4 and 8 are called argument which sum is required:
+
+
+Types of function:
+
+Built_in_function : that are predifined already like print , input etc
+user_define_function : that are defined by users just like above.
+

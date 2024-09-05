@@ -1,10 +1,9 @@
-def cal_avg(num1 , num2 , num3):
-    sum = num1 + num2 + num3
-    avg = sum/3
-    return avg
 
-num1 = int(input("enter first number:"))
-num2 = int(input("enter second number:"))
-num3 = int(input("enter third number:"))
-result = cal_avg( num1, num2 ,num3)
-print("The Average of", num1 , "," , num2 , "and", num2, "is:" , result)
+def fac_cal(num):
+    result=1
+    for val in range(1 , num+1):
+        result *= val
+    return result
+num = int(input("enter a number:"))
+factorial = fac_cal(num)
+print("The factorial of", num , "is:", factorial)
