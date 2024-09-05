@@ -1,0 +1,32 @@
+                Funtions
+Funtions are block of statements that are used to perform a specific task.
+we write a block of codes and then call it again and again ( reusability)
+instead of writing code again and again for same task.
+
+for exampl 
+we want to make a calculator so for sum we can make a function and whenever the user wants to add two numbers he will call that function for sum instead of writing code for same task(sum in this case) again and again.
+
+Benefits:
+Reusability.
+Time saving.
+Efforts saving.
+
+Syntax:
+
+def fun_name(para1 , para2 ..., paran):
+   lines of code:
+
+Calling function:
+fun_name(argument1 , argument2, .... , argumentn)
+
+: Note: in function defination parameter is variable and the function call the argument is the actual value that we want to give as input to get some specific output:
+
+for sum:
+def sum_fun(a , b)
+result = a+b
+print(result)
+
+
+Now if we want to again plus two numbers we don't need to write the code again. we will just call the above function:
+
+sum_fun(4 , 8) : 4 and 8 are called argument which sum is required:

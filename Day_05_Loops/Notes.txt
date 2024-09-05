@@ -59,4 +59,13 @@ for val in list_name
  in: here in is key word.
  list name: can be a list dictionary or tuple through which we want to iterate.
 
- 
+ Range(): this function is used to print the specific range started from zero and end before that specific number which we provided as input:
+
+ it take three values as input:
+ range(num1, num2, num3)
+ num1 : show starting point
+ num2 : show ending point and it is not included in sequence.
+ num3: show step size ( gap between two numbers or increment)
+
+Pass() statement:
+when we want to do nothing and want to leave the code of block empty then we use pass( ) statement. it is work as placeholder. like we want to skip some code and in future we will work on that part so in this case we use pass statement so the compiler will allow us to leave that code incomplete and will not affect the next lines of code.

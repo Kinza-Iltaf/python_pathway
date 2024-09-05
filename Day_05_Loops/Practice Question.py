@@ -187,5 +187,4 @@ init = 1
 while init <= num:
     fac *= init
     init+=1 
-
 print("factorial of  number ",num, "is:", fac)
