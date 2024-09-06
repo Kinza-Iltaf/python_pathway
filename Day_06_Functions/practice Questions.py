@@ -83,4 +83,73 @@ num = int(input("enter a number:"))
 factorial = fac_cal(num)
 print("The factorial of", num , "is:", factorial)
    
+
+# Task :06
+#write program that convert pakistani ruppy into dollar.where 1$=180 PKR  
+def convertor(usd): # function defination
+    value = usd *180
+    return value
+
+usd = int (input("enter the amount of dollars you want to convert:"))
+
+final = convertor(usd)   # function call
+print(usd , " $ is equal to:", final, "PKR.")
+
+# Task : 07
+# Write a function that take input from user and then return string about that number is even or odd.
+def Varification(num):
+    if num % 2 == 0:
+        print("Even:")
+    else:
+        print("odd:")
+
+num = int(input("enter a number:"))
+
+Varification(num)
+
+# Task : 08
+
+# Calculate the factorial through recursion function
+
+def fact(n):
+    if n==0:
+        return 1
+    else:
+        factorial = n * fact(n-1)
+        return factorial
+    
+
+n = int(input("enter a number:"))
+
+f = fact(n)
+print(f)
+
+# Task : 09
+# calculate nth natural numbers sum through recursion:
+
+def sum_cal(n):
+    if n == 0:
+        return 0
+    else:
+        sum = n + sum_cal(n-1)
+        return sum
+    
+n = int(input("Enter a number:"))
+
+sum = sum_cal(n)
+print("The sum of natural numbers till", n , "is:", sum)  
+
+
+#  Task : 10
+# Write a recursive function that print the element of list.
+
+def print_list( list , n=0 ): # n is here default parameter.
+    if len(list) == n:
+        return 0
+    else:
+        print(list[n])
+        print_list(list,n+1)
+
+list = [3,5,6,8]
+print_list(list) 
     

@@ -37,3 +37,25 @@ Types of function:
 Built_in_function : that are predifined already like print , input etc
 user_define_function : that are defined by users just like above.
 
+
+Defaul parameter
+parameters that are defined and run when the argument does not pass by the user.
+def sum(num1 = 1,num2 =5) : function defination
+
+if in function call the user does not pass values then the num1 and num2 value would be 1 and 5 by default.
+
+Recursion function:
+when function call itself inside its own body then this type of function is called recursion function.
+
+for example:
+
+def show(n)
+   if n == 0:    base condition(condition that break the function the back the control outside the function body.)
+       return  : when return does not return any number(variable) then it giving back the control to compiler just like in this case.
+    print(n)
+    show(n-1) : function is calling itself inside its own body
+
+
+show(n) : function call       
+
+
