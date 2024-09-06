@@ -152,4 +152,49 @@ def print_list( list , n=0 ): # n is here default parameter.
 
 list = [3,5,6,8]
 print_list(list) 
+
+# Task : 11
+# Write a Python function called greet that takes a person's name as a parameter and prints a greeting message in the format "Hello, [name]!".
+
+def greet(name):
+    print("Hello " , name)
     
+name = str(input("Enter your name:"))
+greet(name)    
+
+
+# Task : 12
+# Write a function square that takes a number as input and returns its square.
+
+
+def square(num):
+    return num*num
+
+n = int(input("Enter a number:"))
+square = square(n)  #function calling
+print("The square of ", n , "is:", square)
+
+
+# Task : 13
+#  Write a function display_date that prints the current date.
+
+from datetime import datetime #importing built in function
+def display_date():
+    print(datetime.now().strftime(" %y year, %m month, %d day "))
+
+display_date()
+
+# Task : 14
+# Write a function power that takes two parameters, base and exponent, with the default value of exponent being 2. The function should return base raised to the power of exponent.
+
+def power( b ,e =2  ):
+    return b**e
+b = int(input("Enter The base:"))
+e = int(input("Enter Exponent:"))
+
+print(b,"raised to the power" , e , "is:" , power(b,e))
+
+# Task : 15
+
+# Write a function print_shopping_list that takes a list of items and prints each item prefixed with a bullet point (•).
+

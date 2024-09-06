@@ -1,14 +1,19 @@
 
- 
-def print_list( list , n=0 ): # n is here default parameter.
-    if len(list) == n:
-        return 0
-    else:
-        print(list[n])
-        print_list(list,n+1)
+# Write a recursive function factorial that calculates the factorial of a given non-negative integer n.
 
-list = [3,5,6,8]
+def factorial(n):
+     if n > 0:
+        if n == 0 :
+            return 1
+        else:
+            return n * factorial(n-1)
+        
+n = 6
+fac = factorial(6)   
+print(fac)     
 
-print_list(list)       
+
+
+      
         
    
