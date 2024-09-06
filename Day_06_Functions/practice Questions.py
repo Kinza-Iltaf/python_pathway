@@ -198,3 +198,25 @@ print(b,"raised to the power" , e , "is:" , power(b,e))
 
 # Write a function print_shopping_list that takes a list of items and prints each item prefixed with a bullet point (•).
 
+def print_shopping_list(list):
+    for val in list:
+        print(f". {val}")
+
+list = [ "shirts", "pants" , "Moflar" , "Gloves"]  
+
+print_shopping_list(list)
+
+# Task : 16
+# Write a recursive function factorial that calculates the factorial of a given non-negative integer n.
+
+def factorial(n):
+     if n < 0:
+        print("You Entered Negative number:")
+     if n == 0 :
+        return 1
+     else:
+        return n * factorial(n-1)
+        
+n = int(input("Enter a number:"))
+fac = factorial(6)   
+print("Fatorial of ", n , "is:", fac)   
