@@ -219,4 +219,69 @@ def factorial(n):
         
 n = int(input("Enter a number:"))
 fac = factorial(6)   
-print("Fatorial of ", n , "is:", fac)   
+print("Fatorial of ", n , "is:", fac) 
+
+
+# Task : 17
+# write a function that gives the fabonacci sequence 
+
+def fac_list(n , a = 0 , b= 1):
+    while range(n):
+        list.append(a)
+        a ,b = b , a+b
+    return list
+
+n = int(input("enter a number:"))
+
+fab_seq = fac_list(n)
+print(fab_seq)
+
+
+# Task : 18
+# Write a recursive function fibonacci that print the fibonacci sequence:
+def fibonacci_cal(n):
+    if n<=1:
+        return n
+    else:
+        return fibonacci_cal(n-1)+fibonacci_cal(n-2)
+    
+def print_fibonacci(n):
+    if n>=0:
+        print_fibonacci(n-1)
+        print(fibonacci_cal(n), end=",")    
+
+n = int(input("input number:"))
+print(f"Fibonacci sequence till {n}:")  
+print_fibonacci(n)   
+
+# Task : 19
+# Write a recursive function that take number from user and print that numberth element in fibonacci list like:
+# if user enter 2 then the 2nd number in sequence is 1 just like 0,1,1,2,3,5,8,13,.....
+# if user enter 7 then the output should be 13
+
+def fibonacci(n):
+    if n<=1:
+        return n
+    else:
+        return fibonacci(n-1)+fibonacci(n-2)
+    
+n = int(input("enter a number:"))
+
+print(f"The", n,"th number is Fibonacci series is:",fibonacci(n)) 
+
+
+# Task : 20
+
+# Write a function arithmetic_operations that takes two numbers and returns their sum, difference, product, and quotient.
+
+def arithmetic_operations(n1 , n2 ):
+   return n1+n2,n1-n2 ,n1*n2,n1/n2 if n2!=0 else "Undefined"
+
+sum,dif , pro , quot = arithmetic_operations(367,78)
+print(f"Sum:{sum}\nDifference:{dif}\nProduct:{pro}\nQuotient: {quot}")
+
+
+
+
+
+
