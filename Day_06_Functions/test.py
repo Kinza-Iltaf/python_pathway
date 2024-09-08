@@ -43,11 +43,7 @@
 
 # Write a function arithmetic_operations that takes two numbers and returns their sum, difference, product, and quotient.
 
-def arithmetic_operations(n1 , n2 ):
-   return n1+n2,n1-n2 ,n1*n2,n1/n2 if n2!=0 else "Undefined"
 
-sum,dif , pro , quot = arithmetic_operations(367,78)
-print(f"Sum:{sum}\nDifference:{dif}\nProduct:{pro}\nQuotient: {quot}")
 
 
 

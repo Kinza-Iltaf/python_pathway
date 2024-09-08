@@ -56,6 +56,10 @@ def show(n)
     show(n-1) : function is calling itself inside its own body
 
 
-show(n) : function call       
+show(n) : function call  
+
+Note : the recursion is like breaking a big and complex task into chunks to solve it easily and in less time.
+
+
 
 

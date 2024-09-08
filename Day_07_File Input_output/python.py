@@ -29,5 +29,19 @@ print("Line 3 in File:",line_3)
 f.close() 
 
 
+# writing something in file:
+
+f = open("test.txt" , "w")
+f.write("i am programmer. i love coding.") #this line will overwrite this line
+
+
+# Appending something in file:
+f = open("test.txt" , "a")
+f.write(" \nBecause i want to learn machine learning.")
+
+
+
+
+
 
 

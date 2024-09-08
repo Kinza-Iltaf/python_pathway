@@ -52,3 +52,25 @@ Reading file line by line:
 line1 = f.readline()
 
 so it will read first line in file.
+
+
+Note: when the compiler read data once then next time it didn't read that data or content again.
+
+For example:
+once we read the whole file by 
+content =  f.read()
+then if we write to read a line, the result would be empty line because the whole file is already read by compiler and now the cursor is in the end so when the command for line will be executed the cursor will go to next line where there is noting to display for read and it will display the empty line.
+
+Writting to a file:
+
+There are two modes in write.
+
+1. Write mode.(it overwrite means first remove all the data and start writing new data)
+
+2. Append mode. (this command add the new data at the end of the file. For example in file i have "i am programmer." and i use append command so it will not remove the "i am programmer" this command will add all new data at the end of this line. Like if i add "i love coding" so the final output will be "i am programmer. i love coding" )
+
+Note: if you write the file name with append or write mode and that file does not exist then the compiler automatically make that file in folder.
+
+
+
+
