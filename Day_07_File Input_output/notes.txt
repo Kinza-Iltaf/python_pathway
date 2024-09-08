@@ -1,0 +1,54 @@
+                   Day : 07
+            File input and output:
+Python can be used to perform operation on file. 
+Operation on file means opening file, reading file , creating file, making changes in file and so more.  
+
+There are Two major Types of files.
+1. Text file: in which we store the data in form of characters.
+for example:
+.txt , docx , ppp,  .log etc
+
+2. Binary file: where we store data other than text format.
+mp4 , mov , png , jpg etc.
+
+Basic Operation on file:
+
+1. opening file:
+opening file means open that file for any other operation like writing , reading , append , updating , deletion etc.
+
+Format for opening file:
+
+f = open("fileName.txt", "mode") 
+
+here 
+f : is a variable that create object for file
+fileName: it is the name of your file you want to open.
+mode: it show the mode like for which operation you want to open the file for example for read for which we write "r", for writing we write "w" for 
+
+
+
+
+Modes in File:
+r : for reading data from file
+w : for removing all data and writting new data in file
+x : creating new file and writing data in that file
+a : open for writing and adding data at the end of the file.
+b : it is used for binary file operation 
+t : it is used for text file operation
++ : it is used for two operation simultaneously. like reading and writting
+
+Reading file:
+
+first open the file.
+content = f.read()
+
+now if we want to read some specific part in file like first 10 letters then we pass the length.
+
+like:
+content = f. read(10)
+
+Reading file line by line:
+
+line1 = f.readline()
+
+so it will read first line in file.
