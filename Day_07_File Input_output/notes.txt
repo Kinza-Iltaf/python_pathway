@@ -72,5 +72,54 @@ There are two modes in write.
 Note: if you write the file name with append or write mode and that file does not exist then the compiler automatically make that file in folder.
 
 
++ . Use to perform two operation simultaneously like reading and writing (r+) but it will not override means the existing data in file will not be truncated(deleted or removed). Here the curson start from beginning of the file. i have first sentence "am programmer." and i use r+ mode and add data "i". so "i" will be added at the beginning of the sentence and it will become "im programmer" means i is added at the beginning at the place a in string am. now it is im.
+
+For reading and writing(w+) it is also used for reading and writing but the file data will removed first.
+
+a+ mode: it is used to append (add) the data at the end of the file.
+For example "i am" 
+i append "programmer" so it will be added in end and the final sentence will become " i am programmer"
+
+
+With Syntax:
+the is used to close the file automatically.
+
+Benefits:
+
+Automatic file closing: Ensures the file is closed properly.
+Cleaner code: No need for manual close() calls.
+Better error handling: File closes even if an error occurs.
+Fewer bugs: Reduces the risk of resource leaks.
+
+
+like:
+
+f = open("filename.ext", "mode")
+f.read()
+f.write()
+f.close()
+so here we need to use the f again and again which indicate that here is the all data of file. But with with syntax we can make things easy:
+
+
+with open("filename.ext", "mode") as f
+  f.read()
+  f.write()
+  AND DONT NEED TO CLOSE THE FILE IT AUTOMATICALLY CLOSE THE FILE.
+
+
+Deletion of File:
+
+to delete a file we need a module:
+module is the block of code which is pre built by the developer
+That module is os we first import it the use it function remove.
+
+Syntax:
+ 
+ import os
+ os.remove("file_name")
+
+
+
+
 
 
