@@ -141,7 +141,97 @@ with open("test.txt", "r") as f:
             count+=1
 print(count)      
 
-   
+  # Task : 15 
+# 1. Basic File Operations: Opening and Reading
+# Write a Python program to:
+# Open a file named example.txt in read mode.
+# Read the entire content of the file.
+# Print the content to the console
+
+f = open("test.txt", "r")
+content = f.read()
+print("The entire content of the file is:\n",content)
+
+ # Task : 16
+# 2. Reading Specific Characters
+# Modify the previous program to read only the first 15 characters of the file.
+
+f = open("test.txt", "r")
+content = f.read(15)
+print("The first 15 charaters of file is:\n",content)
+
+ # Task : 17
+#  3. Reading Line by Line
+# Write a Python program to read the first two lines of a file named example.txt.
+
+f = open("test.txt", "r")
+line_1 = f.readline()
+print("Line one:", line_1)
+
+line_2 = f.readline()
+print("Line one:", line_2)
+
+# Task : 18
+
+# 4. Writing to a File (Overwrite)
+
+# Write a Python program to open a file in write mode, overwrite its content with "Hello, World!", and then close the file.
+
+f = open("test.txt", "w")
+f.write("Hello, World!")
+f.close()
+
+# Task : 19
+# 5. Appending to a File
+
+# Write a Python program that appends the text "I love Python." to an existing file example.txt.
+
+with open("test.txt", "a") as f:
+    f.write("I love Python")
+
+
+# Task : 20
+# 6. Reading and Writing with r+ Mode
+# Write a Python program to:
+
+# Open a file named example.txt in r+ mode.
+# Read the existing content.
+# Write "Hello" at the beginning of the file   
+with open("test.txt", "r+") as f:
+      content= f.read()
+      print("Before", content)
+      f.seek(0)
+      f.write("Hello")
+      print("After:",content)  
+
+# Task : 21
+# 8. Working with Binary Files
+# Write a Python program to:
+# Open a binary file named image.png in binary read mode.
+# Read the first 1024 bytes of the file.
+
+with open("Cafe menu.png", "rb") as f:
+   content= f.read(1024)
+   print(content)
+
+
+# Task : 22
+# 10. Simultaneous Read and Write using w+ Mode
+
+# Write a Python program to:
+
+# Open a file in w+ mode.
+# Write "First Line" to the file.
+# Move the cursor to the start of the file and read the content
+
+with open("Cafe menu.png", "w+") as f:
+    f.write("First Line")
+    f.seek(0)
+    data = f.read()
+    print(data)
+
+
+
 
 
 
