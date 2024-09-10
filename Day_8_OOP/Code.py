@@ -5,8 +5,12 @@
 class Dog:
     name = "Blesky"
     age = 12
-d1 = Dog
-print("Dog Name:",d1.name)  
-print("Dog Age:",d1.age) 
+    def __init__(self):
+        print("Here is the constructor:")
+
+
+Dog1 = Dog()
+
+
 
 
