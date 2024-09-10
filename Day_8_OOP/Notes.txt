@@ -1,0 +1,29 @@
+                      Object Oriented Programing
+1. some time we doing procedral programing means writting code and it is executed line by line.
+2. some time we use function that reduce the redundancy and increase the reuseability.
+3. some times we use OOP that help us in reusability and reducing redundancy.
+
+Class And Objects:
+
+Class:
+class is the blue print for creating objects.
+For example:
+we have student class and its abjects will be name, age, grade, subjects etc.
+
+Syntax:
+
+class Classname:
+objectname = value
+
+Details:
+class : class is the keyword for creating class.
+Clssname: it can be any variable and it should be start with capital letter.
+objectname: it can be the name of anything related to class data
+value : value is the data that would be store in the objectname variable.
+
+For example:
+
+class Student:
+age = 12
+grade = A
+
