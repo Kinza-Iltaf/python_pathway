@@ -27,3 +27,59 @@ class Student:
 age = 12
 grade = A
 
+Creating Objects:
+
+instancename = classname()
+
+Accessing the class's object:
+instance.objectname
+
+Constructor:
+constructor is special type of method that is called automatically when the class object is created.
+In case of constructor we don't need to called our class specifically all the data inside the class is executed when the object for that class is created.
+
+
+Types of constructor:
+Default constructor. (having no parameters)
+Parameterized constructor. (having parameters)
+
+Syntax:
+
+def__init__(self):
+
+now we need to just create the object of that class and all the data inside the class will execute automatically.
+
+Example is given in code section:
+
+Class attributes and objects attributes:
+Class attributes are variables that belong to the class itself and are shared among all instances of the class. They remain the same across all objects of that class unless explicitly changed at the class level.
+
+Object (or instance) attributes are variables that belong to individual instances of the class. Their values can differ from one object to another.
+
+Example:
+In a college class, the attribute college_name could be a class attribute because it would be the same for all students in the class. On the other hand, student_name would be an object attribute because each student would have a unique name.
+
+Note: we can access the class attribute by class name too.
+For example:
+
+class_name.class_attribute_name
+
+Note: if the there is an attribute which has declare as the class and object attribute then the object attribute precedence is high so the class attribute value would be overwritten as the value of object attribute.
+
+Methods:
+class is the collection of two things
+1. Attributes.(data, properties)
+2. Methods. (function, what can be perform)
+
+Syntax:
+
+def method_name() : we have to must pass the parameter to method. if there is no parameter then we pass by default "self" parameter.
+
+Calling method:
+
+object_name.method_name
+
+
+
+
+

@@ -1,25 +1,21 @@
 # test file
 
-# Problem:
-# Create a class called Book that has three attributes: title, author, and pages. Use a constructor to initialize these attributes when an object is created. Add a method called is_long() that checks if the book has more than 100 pages. If it does, return True, otherwise return False.
+class Student:
+    def __init__(self,name, marks1 , marks2, marks3):
+        self.name = name
+        self.marks1 = marks1
+        self.marks2 = marks2
+        self.marks3 = marks3
+    def avg_marks(self):
+        sum = self.marks1 + self.marks2 + self.marks3
 
-class Book:
-    def __init__(self, title, author,pages) :
+       
+        return sum/3
 
-       self.title = title
-       self.author = author
-       self.pages = pages
-    def is_long(self):
-        if self.pages > 100:
-            return True
-        else:
-            return False
-        
-book = Book("Halim", "nimra ahmad", 1203)
-print(book.title)
-print(book.author)
-print(book.pages)
-value = book.is_long()
-print("checking for number of pages",value )
+
+student1 = Student("karan", 3, 3, 3)
+marks_avg = student1.avg_marks()
+
+print("Marks average is:", marks_avg)
         
 

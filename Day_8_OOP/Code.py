@@ -48,6 +48,29 @@ print(book.pages)
 value = book.is_long()
 print("checking for number of pages",value )
 
+
+# problem:
+# Create a class that take the marks and names of student of three subjects and then make a method that print the average of marks.
+
+class Student:
+    def __init__(self,name, marks1 , marks2, marks3):
+        self.name = name
+        self.marks1 = marks1
+        self.marks2 = marks2
+        self.marks3 = marks3
+    def avg_marks():
+        sum = self.marks1 + self.marks2 + self.marks3
+        return sum
+
+
+student1 = Student("karan", 34, 54, 25)
+
+print(student1.avg_marks)
+
+            
+
+
+
         
 
 
