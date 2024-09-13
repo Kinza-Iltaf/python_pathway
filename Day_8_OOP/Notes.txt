@@ -80,6 +80,21 @@ Calling method:
 object_name.method_name
 
 
+Static method:
+The method which don't use the self parameter.The static method work at class level instead of object level.
+As self is used for objects but in case of static method we do not use the object as such so for declaring method as static method we write:
+
+@staticmethod: this is called decorator : which extend the behavior of function without parmanently changing it.
+method_name.......
+
+
+Abstraction:
+it is a way to hide the implementation from users and showing important feature to the users.
+
+Encapsulation:
+wrapping data and function into single unit is called encapsulation.
+
+
 
 
 
