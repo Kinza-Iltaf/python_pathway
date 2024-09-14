@@ -1,19 +1,25 @@
 class Student:
     def __init__(self,name , age):
-        
         self.name = name
         self.age = age
 
-    def print_name(self):
-        print("Hello!",self.name, "You are now",self.age,"years old")  
+    def __student_details(self,reg_no,password):
+        self.reg_no = reg_no
+        self.password = password
+        print("Reg_no ",self.reg_no,"And password ",self.password)
+       
+    def print_details(self,r,p):
+       self.__student_details(r,p)
 
 s1 = Student("Alice", 28)        
-s1.print_name() 
-del s1.age   
-print("After deletion of Object")
-print(s1.age) # throw error because the age attribute has been deleted.
+print("Student Personal info ")
+print(s1.name)
+print(s1.age)
+reg_no = int(input("Enter your registration number "))
+password = int(input("Enter your password"))
+print("Studnet private data is ")
+s1.print_details(reg_no,password)
 
-# s1.print_name   : it will throw an error as the object s1 is already deleted.
 
 
 
