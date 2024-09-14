@@ -104,6 +104,52 @@ print("Your balance after crediting amount",credit_amount,"is",updated_balance)
 current_balance = account.print_balance()
 print("Your updated balance is",current_balance)
 
+# problem : 06
+# write a problem and after deleted its object try to access it again and chekc the result.
+
+class Student:
+    def __init__(self,name , age):
+        
+        self.name = name
+        self.age = age
+
+    def print_name(self):
+        print("Hello!",self.name, "You are now",self.age,"years old")  
+
+s1 = Student("Alice", 28)        
+s1.print_name() 
+del s1.age   
+print("After deletion of Object")
+print(s1.age) # throw error because the age attribute has been deleted.
+
+# s1.print_name   : it will throw an error as the object s1 is already deleted.
+
+
+# problem : 07
+# write a code that show multi level inheritance and use the super() method
+
+class A:
+    def show(self):
+        print("A's show")
+
+class B(A):
+    def show(self):
+        print("B's show")
+        super().show()
+
+class C(A):
+    def show(self):
+        print("C's show")
+        super().show()
+
+class D(B, C):
+    def show(self):
+        print("D's show")
+        super().show()
+
+d = D()
+d.show()
+
 
 
             
