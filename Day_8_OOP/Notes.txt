@@ -94,6 +94,36 @@ it is a way to hide the implementation from users and showing important feature 
 Encapsulation:
 wrapping data and function into single unit is called encapsulation.
 
+Deletion of object or the attribute of an object:
+
+del obj_name  : for deletion of the object.
+del obj_name.att_name : for deletion of object attribute.
+
+Public and private attributes and methods:
+public : accessable outside of the class.
+private : only accesable inside the class. (to make something private we put two underscore before that)
+
+Inheretance:
+when one class(children class) derive the properies and method of another class(parent class) then this is class inheretance.
+
+Syntax:
+class parent_class:
+    attributes
+    methods
+
+class child_class(parent_class):
+
+Types of inheritance:
+1. single level inheritance (single child and parent class that inherit the properties from parent class)
+2. multi_level inheritance (where one class derive from another and another class derive from previous one. like there are multiple parent and children which are parent at time and child as well.)
+3. multiple inheritance (the class which has multiple parents but single child like one single child inheret properties from differnet class.)
+
+Syntax:
+class multiple_inheritance(class_one, class_two, class_three)
+
+
+
+
 
 
 

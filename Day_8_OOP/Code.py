@@ -1,6 +1,6 @@
 # code
 
-# Problem:
+# Problem: 01
 # Create a class called Dog that has two attributes: age and breed. Then, create an instance of the class and access these attributes using the instance.
 class Dog:
     name = "Blesky"
@@ -12,7 +12,7 @@ class Dog:
 Dog1 = Dog() #here we don't need to class the class because of constructor.
 
 
-# problem
+# problem: 02
 # Create a class called Car that has two attributes: brand and year. Use a constructor to initialize these attributes when an object is created. Then, create an instance of the class and print out the car's brand and year.
 
 class Car:
@@ -26,7 +26,7 @@ car1= Car("mecedes",2010)
 print(car1.brand)
 print(car1.year)   
 
-# Problem:
+# Problem: 03
 # Create a class called Book that has three attributes: title, author, and pages. Use a constructor to initialize these attributes when an object is created. Add a method called is_long() that checks if the book has more than 100 pages. If it does, return True, otherwise return False.
 
 class Book:
@@ -49,7 +49,7 @@ value = book.is_long()
 print("checking for number of pages",value )
 
 
-# problem:
+# problem: 04
 # Create a class that take the marks and names of student of three subjects and then make a method that print the average of marks.
 
 class Student:
@@ -67,7 +67,7 @@ student1 = Student("karan", 3, 3, 3)
 avg_marks=student1.avg_marks()
 print("HI", student1.name , "Your Average Score is:", avg_marks)
 
-# problem:
+# problem: 05
 # create an account class that has two attributes account number and balance.
 # cteat methods for debits , ctedits and printing the balance.
 
