@@ -203,6 +203,8 @@ car = Toyota("Blue")
 car.start()
 car.stop()
 
+# Example of single level inheritance
+
 # Problem: Employee and Manager
 # Create a class Employee that has the following:
 # Attributes: name, salary
@@ -240,6 +242,92 @@ emp.print_details()
 # Manager details
 manager = Manager("karan", 1248,"HR")  
 manager.get_details() 
+
+# Example of multi level inheritance
+
+# Multi-Level Inheritance
+# Problem: Animal, Mammal, and Dog
+# Create a class Animal with:
+# Attribute: species
+# Method:
+# make_sound() - prints a general animal sound like "Some sound"
+# Create a class Mammal that inherits from Animal and adds:
+# Method:
+# Override make_sound() to print a mammal-specific sound, like "Mammal sound."
+# Create a class Dog that inherits from Mammal and adds:
+
+# Method:
+# Override make_sound() to print "Woof Woof"
+# Objective:
+# Implement the three classes.
+# Create an object of class Dog and call the make_sound() method.
+
+class Animal:
+    def __init__(self,species):
+        self.species = species
+    def make_sound(self):
+        print("Woof Woof")   
+
+class Mammal(Animal):
+    def make_sound(self):
+        print("Mamal sound")
+
+class Dog(Mammal):
+    
+    def make_sound(self):
+        print(f"species {self.species} ")   
+        print("Woaf Woaf")
+
+dog = Dog("Dog")  
+dog.make_sound() 
+
+# problem : 
+#  Multiple Inheritance
+# Problem: Vehicle, ElectricVehicle, and SolarVehicle
+# Create a class Vehicle with:
+# Attributes: brand
+# Method:
+# get_brand() - prints the brand of the vehicle.
+# Create a class ElectricVehicle with:
+
+# Attribute: battery_capacity
+# Method:
+# get_battery_info() - prints the battery capacity of the vehicle.
+# Create a class SolarVehicle that inherits from both Vehicle and ElectricVehicle and adds:
+# Attribute: solar_panel_area
+
+# Method:
+# get_solar_panel_info() - prints the solar panel area of the vehicle.
+# Objective:
+# Implement the classes using multiple inheritance.
+# Create an object of class SolarVehicle and call all the methods from Vehicle, ElectricVehicle, and SolarVehicle.
+class Vehicle:
+    def __init__(self, brand):
+        self.brand = brand
+
+    def get_brand(self):
+        print(f"Vehicle Brand {self.brand}")    
+
+class ElectricVehicle:
+    def __init__(self, battery_capacity):
+        self.battery_capacity = battery_capacity
+
+    def get_battery_info(self):
+        print(f"Battery capacity {self.battery_capacity}")  
+
+class SolarVehicle(Vehicle , ElectricVehicle):
+    def __init__(self, brand , battery_capacity,solor_pannel_area   ):
+        Vehicle.__init__(self, brand)
+        ElectricVehicle.__init__(self, battery_capacity)
+        self.solor_pannel_area = solor_pannel_area
+    def get_solar_panel_info(self):
+        print(f"Solar pannel area {self.solor_pannel_area}")  
+
+
+solar = SolarVehicle("Toyota", "1300 kwh", "12sqm") 
+solar.get_brand() 
+solar.get_battery_info()
+solar.get_solar_panel_info()  
 
 
 

@@ -1,40 +1,56 @@
-# Problem: Employee and Manager
-# Create a class Employee that has the following:
-# Attributes: name, salary
-# Methods:
-# get_details() - prints the employee's details
-# Create a class Manager that inherits from Employee and adds the following:
-# Attributes: department
-# Methods:
-# Override get_details() to include the department in the output.
+#  Multiple Inheritance
+# Problem: Vehicle, ElectricVehicle, and SolarVehicle
+# Create a class Vehicle with:
+# Attributes: brand
+# Method:
+# get_brand() - prints the brand of the vehicle.
+# Create a class ElectricVehicle with:
+
+# Attribute: battery_capacity
+# Method:
+# get_battery_info() - prints the battery capacity of the vehicle.
+# Create a class SolarVehicle that inherits from both Vehicle and ElectricVehicle and adds:
+# Attribute: solar_panel_area
+
+# Method:
+# get_solar_panel_info() - prints the solar panel area of the vehicle.
 # Objective:
-# Implement both classes.
-# Create objects of both classes and call their get_details() methods.
-class Employee:
-    def __init__(self, name, salary):
-        self.name = name
-        self.salary = salary
+# Implement the classes using multiple inheritance.
+# Create an object of class SolarVehicle and call all the methods from Vehicle, ElectricVehicle, and SolarVehicle.
+class Vehicle:
+    def __init__(self, brand):
+        self.brand = brand
 
-    def print_details(self):
-        print("Employee name:",self.name) 
-        print("Employee salary:",self.salary)  
+    def get_brand(self):
+        print(f"Vehicle Brand {self.brand}")    
 
-class Manager(Employee):
-        def __init__(self, name, salary , department):
-             super().__init__(name, salary)
-             self.dep = department
+class ElectricVehicle:
+    def __init__(self, battery_capacity):
+        self.battery_capacity = battery_capacity
 
-        def get_details(self):  
-               print("Manager name:",self.name) 
-               print("Manager salary:",self.salary)  
-               print("Manager Department:",self.dep) 
+    def get_battery_info(self):
+        print(f"Battery capacity {self.battery_capacity}")  
 
-# Employee details
-emp = Employee("john", 24536)
-emp.print_details()
-# Manager details
-manager = Manager("karan", 1248,"HR")  
-manager.get_details()  
+class SolarVehicle(Vehicle , ElectricVehicle):
+    def __init__(self, brand , battery_capacity,solor_pannel_area   ):
+        Vehicle.__init__(self, brand)
+        ElectricVehicle.__init__(self, battery_capacity)
+        self.solor_pannel_area = solor_pannel_area
+    def get_solar_panel_info(self):
+        print(f"Solar pannel area {self.solor_pannel_area}")  
+
+
+solar = SolarVehicle("Toyota", "1300 kwh", "12sqm") 
+solar.get_brand() 
+solar.get_battery_info()
+solar.get_solar_panel_info()   
+        
+
+ 
+
+
+
+
 
         
         
