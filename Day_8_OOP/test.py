@@ -3,13 +3,22 @@
 # Attributes: name, salary
 # Methods:
 # get_details() - prints the employee's details
+# Create a class Manager that inherits from Employee and adds the following:
+# Attributes: department
+# Methods:
+# Override get_details() to include the department in the output.
+# Objective:
+# Implement both classes.
+# Create objects of both classes and call their get_details() methods.
 class Employee:
     def __init__(self, name, salary):
         self.name = name
         self.salary = salary
-    def print_details(self, name,salary):
+
+    def print_details(self):
         print("Employee name:",self.name) 
-        print("Employee salary:",self.salary)   
+        print("Employee salary:",self.salary)  
+
 class Manager(Employee):
         def __init__(self, name, salary , department):
              super().__init__(name, salary)
@@ -20,6 +29,10 @@ class Manager(Employee):
                print("Manager salary:",self.salary)  
                print("Manager Department:",self.dep) 
 
+# Employee details
+emp = Employee("john", 24536)
+emp.print_details()
+# Manager details
 manager = Manager("karan", 1248,"HR")  
 manager.get_details()  
 
@@ -28,23 +41,8 @@ manager.get_details()
 
        
 
-# Create a class Manager that inherits from Employee and adds the following:
 
-# Attributes: department
-# Methods:
-# Override get_details() to include the department in the output.
-# Objective:
-# Implement both classes.
-# Create objects of both classes and call their get_details() methods.
-# Example:
-# python
-# Copy code
-# Output should include:
-# Employee Name: John
-# Salary: 50000
-# Manager Name: Sarah
-# Salary: 90000
-# Department: HR
+
 
 
 
