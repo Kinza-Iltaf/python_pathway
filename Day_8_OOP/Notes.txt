@@ -121,6 +121,15 @@ Types of inheritance:
 Syntax:
 class multiple_inheritance(class_one, class_two, class_three)
 
+Super method()
+The super() method in Python is like a shortcut to call methods from the parent class when you're working in a child class.
+
+Simple definition:
+super() allows a child class to access methods and properties from its parent class without needing to use the parent's name directly.
+It's especially helpful when you're overriding a method in the child class but still want to run the parent class's version of that method.
+
+
+
 
 
 
