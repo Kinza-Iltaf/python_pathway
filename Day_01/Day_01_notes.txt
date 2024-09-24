@@ -36,7 +36,47 @@ In python we just write variable name and initialize it with value like:
 age = 5;
 price= 4.6$;
 
-                                                                                           question 05:
+Types of varaible name:
+01. camel_case:
+in the method we capitilize each letter of new word if the variable name having more than one word except first word.
+
+For example:
+
+i have variable name "mysonage" so by using the camel case method we can declare that variable in this way 
+
+mySonAge :Note: each letter of new word is capital except first word letter.
+
+02. Pascel case:
+in this type of variable name declaration every word first letter will be capital.
+
+For example:
+
+MySonAge : here each letter of the first word is capital.
+
+03. Snake Case:
+
+in this type of variable delaration each work is seperated by underscore
+
+For example:
+
+my_son_age :
+
+Multiple variable declarion at same time:
+
+we can declare multiple variable and assign them values at same time.
+
+for example:
+
+x , y , z = 10 , 20 , 30
+
+Note: we can assign single value to multiple variable.
+
+for example:
+
+x , y , z = 10 
+
+
+                                                                                    question 05:
 what are the rules for naming a variable?
 
 01. The variable name can not be reserved word (words that have special meaning in python. For example print is function name that is used to print something on screen so it can not be variable name)

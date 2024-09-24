@@ -186,6 +186,16 @@ print("List sorting in Acsending order:",List)
 List.sort(reverse=True)
 print("List sorting in Decending Order:",List)
 
+# Task : 12
+# Write code for unpacking the collection:
+list = [ 1, 3, 4,6]
+num1 , num2 , num3 , num4 = list
+
+print(num1)
+print(num2)
+print(num3)
+print(num4)
+
 
 
 

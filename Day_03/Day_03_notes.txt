@@ -14,6 +14,13 @@ now at index[0] there is 1 so in list we can change this value by index number
 list[0] = 8  
 now at index there will be 8 instead of 1 so that's why the list is called mutalbe(changealbe) unlike string where we can only access the value and can not change.
 
+unpacking a collection
+We can extract the values of list or tuple in form of variable too. that is called unpacking a collection.
+
+for example :
+list = [ 1, 3, 4,6]
+num1 , num2 , num3 , num4 = list
+
 
 02. list slicing:
 list slicing is used to access the particular part of the list.

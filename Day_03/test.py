@@ -1,10 +1,7 @@
-List = ["C", "D", "A", "A", "B", "B", "A"]
+list = [ 1, 3, 4,6]
+num1 , num2 , num3 , num4 = list
 
-print("List Elements are:", List)
-
-List.sort()
-
-print("List sorting in Acsending order:",List)
-
-List.sort(reverse=True)
-print("List sorting in Decending Order:",List)
+print(num1)
+print(num2)
+print(num3)
+print(num4)
